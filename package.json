@@ -20,7 +20,8 @@
     "postinstall": "install-app-deps",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "build"
+    "release": "build",
+    "bundle":"webpack"
   },
   "dependencies": {
     "chart.js": "^2.7.2",
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "electron": "^1.8.7",
-    "electron-builder": "^10.8.1"
+    "electron-builder": "^10.8.1",
+    "webpack": "^4.16.1",
+    "webpack-command": "^0.4.1"
   }
 }
