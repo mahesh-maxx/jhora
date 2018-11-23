@@ -2,19 +2,21 @@
   "name": "Jhora",
   "productName": "Jhora",
   "description": "Jhora",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Anoop Kumar <optimistanoopr@gmail.com>",
   "copyright": "© 2018, KF Daniyari.",
-  "homepage": "http://example.com",
+  "homepage": "https://github.com/optimistanoop/jhora",
   "license": "MIT",
-  "main": "app/app.js",
+  "main": "app.js",
   "build": {
     "appId": "com.example.electron-boilerplate-sqlite",
     "files": [
-      "app/**/*",
+      "**/*",
       "node_modules/**/*",
-      "package.json"
-    ]
+      "package.json",
+      "*"
+    ],
+    "icon": "./images/logo.ico"
   },
   "scripts": {
     "postinstall": "install-app-deps",
@@ -24,12 +26,12 @@
   },
   "dependencies": {
     "chart.js": "^2.7.2",
-    "csvtojson": "^2.0.4",
-    "json2csv": "^4.1.5",
-    "sqlite3": "^3.1.13"
+    "csvtojson": "^2.0.8",
+    "json2csv": "^4.2.1",
+    "sqlite3": "^4.0.2"
   },
   "devDependencies": {
-    "electron": "^1.8.7",
-    "electron-builder": "^10.8.1"
+    "electron": "^3.0.0",
+    "electron-builder": "^20.28.4"
   }
 }
